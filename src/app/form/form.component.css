@@ -1,0 +1,85 @@
+.formbody {
+  max-width: 350px;
+  background: #fff;
+  padding: 1em;
+  margin-top: 1em;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+  border-radius: 4px;
+}
+
+.form-item {
+  margin-block: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  color: #707070;
+  font-size: 14px;
+}
+
+input {
+  background: #fff;
+  height: 35px;
+  outline: 0;
+  border: 1px solid #707070;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-indent: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  color: #fbfefe;
+  padding-block: 10px;
+  padding-inline: 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 250ms ease-in;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.add-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: #03a9f4;
+}
+
+
+.add-button  {
+  font-size: 16px;
+}
+
+.add {
+  background: #5cb85c;
+  display: flex;
+  gap: 10px;
+  align-items: c;
+}
+
+.cancel {
+  background: #d9534f;
+}

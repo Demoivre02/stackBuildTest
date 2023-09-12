@@ -1,0 +1,57 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: block;
+  margin-top: 2em;
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 20px 2px #b4b3b3;
+}
+
+.name-initials{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+}
+
+.tablehead{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 3em;
+  align-items: center;
+  color: #7d949f;
+  font-family: 'Poppins', sans-serif;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.email{
+  width: 220px;
+  text-align: left;
+}
+
+.initials{
+  width: 50px;
+  height: 50px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative{
+  position: relative;
+}

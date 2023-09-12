@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="left">
+    <div class="name-initials">
+      <div class="initials">
+        {{ (item?.name.firstname | capitalize) + ' ' + (item?.name.lastname | capitalize) }}
+      </div>
+
+      <div class="name">
+        <p>{{(item?.name.firstname  | uppercase ) + ' ' + (item?.name.lastname |uppercase) }}</p>
+      </div>
+    </div>
+
+    <div class="email">
+      <p>{{item?.email}}</p>
+    </div>
+    <div class="role">
+      <p>user</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="relative">
+      <app-menu></app-menu>
+  </div>
+</div>

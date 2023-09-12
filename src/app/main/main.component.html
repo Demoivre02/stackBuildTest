@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="container">
+      <div class="flex">
+        <h3>Manage Users</h3>
+        <div>
+          <app-form></app-form>
+        </div>
+      </div>
+      <div class="tablehead">
+        <p>Name</p>
+        <p>Email</p>
+        <p>Role</p>
+      </div>
+        <div *ngIf="isLoading">
+          <app-loader></app-loader>
+        </div>
+      <ng-container *ngFor="let item of usersArray | slice:startSlice:endSlice">
+        <app-databody [item]="item"></app-databody>
+      </ng-container>
+  </div>
+  <div class="buttons">
+    	<button (click)="prev()">
+        <mat-icon class="look-back">
+          chevron_left
+        </mat-icon>
+        prev
+      </button>
+    	<button (click)="next()">
+        next
+        <mat-icon>
+          navigate_next
+        </mat-icon>
+      </button>
+  </div>
+</div>
+

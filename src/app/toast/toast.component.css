@@ -1,0 +1,21 @@
+.toast {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  color: #03a9f4;
+  padding: 10px;
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}

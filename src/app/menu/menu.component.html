@@ -1,0 +1,60 @@
+<div class="menu">
+  <div *ngIf="showToast" class="toatser">
+    <app-toast message="User successfully updated"></app-toast>
+  </div>
+  <button class="vert" (click)="toggleMenu()">  <mat-icon>more_vert</mat-icon></button>
+  <ul *ngIf="isMenuOpen">
+    <li (click)="edit()">
+      <mat-icon class="edit">
+        edit
+      </mat-icon>
+      Edit
+    </li>
+    <div *ngIf="openForm" class="form-container">
+      <div class="formbody">
+        <div class="form-item">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="name"
+            [formControl]="FirstName"
+          >
+        </div>
+        <div class="form-item">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastnameemail"
+            [formControl]="LastName"
+          >
+        </div>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="name"
+            [formControl]="Email"
+          >
+        </div>
+        <div class="form-item">
+          <label for="role">Role</label>
+          <input
+            type="text"
+            id="role"
+            [formControl]="Role"
+          >
+        </div>
+        <div class="buttons">
+          <button (click)="closeForm()" class="cancel">Cancel</button>
+          <button (click)="update()"  class="add">Add</button>
+        </div>
+      </div>
+    </div>
+    <li (click)="delete()">
+      <mat-icon class="delete">
+        delete
+      </mat-icon>
+      Delete
+    </li>
+  </ul>
+</div>
