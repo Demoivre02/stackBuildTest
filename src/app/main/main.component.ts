@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms'
 import { UserService } from '../service/user.service';
 
 
@@ -10,6 +11,9 @@ import { UserService } from '../service/user.service';
 export class MainComponent {
 
   constructor (private getService : UserService){}
+
+  search = new FormControl('')
+
 
   usersArray: unknown[] = [];
   isLoading! : boolean
@@ -28,6 +32,21 @@ export class MainComponent {
     this.endSlice = Math.max(5, this.endSlice + 5);
   }
 
+
+
+  onChange() {
+    const searchTerm = this.search.value?.toLocaleLowerCase()
+
+    if (searchTerm) {
+      // Filter the usersArray based on the search term
+      this.usersArray = this.usersArray.filter((user: any) => {
+        const userName = (user['name']['firstname'] + ' ' + user['name']['lastname']).toLowerCase();
+        return userName.includes(searchTerm);
+      });
+    } else {
+      this.ngOnInit();
+    }
+  }
 
   ngOnInit(){
     this.isLoading = true

@@ -6,6 +6,16 @@
           <app-form></app-form>
         </div>
       </div>
+      <div class="search">
+        <input
+          type="search"
+          name=""
+          id=""
+          placeholder="search user..."
+          [formControl] = "search"
+          (change)="onChange()"
+        >
+      </div>
       <div class="tablehead">
         <p>Name</p>
         <p>Email</p>
