@@ -153,4 +153,13 @@ button:hover {
   background: #d9534f;
 }
 
+@media (max-width:640px){
+  li{
+    font-size: 12px;
+  }
+  .form-container{
+    margin-right: 1em;
+  }
+}
+
 

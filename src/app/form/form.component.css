@@ -1,6 +1,6 @@
 .formbody {
-  max-width: 350px;
-  background: #fff;
+  max-width: 300px;
+  background: #707070;
   padding: 1em;
   margin-top: 1em;
   position: absolute;
@@ -18,7 +18,7 @@
 
 label {
   font-family: 'Poppins', sans-serif;
-  color: #707070;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -41,15 +41,15 @@ input {
 }
 
 button {
-  width: 120px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
   border: 0;
   color: #fbfefe;
-  padding-block: 10px;
-  padding-inline: 16px;
+  padding-block: 6px;
+  padding-inline: 12px;
   font-size: 16px;
   border-radius: 4px;
   transition: 250ms ease-in;
@@ -82,4 +82,19 @@ button {
 
 .cancel {
   background: #d9534f;
+}
+
+@media (max-width:640px){
+  button{
+    font-size: 12px;
+    padding-block: 3px;
+    padding-inline: 8px;
+  }
+  .formbody{
+    max-width: 300px;
+    padding: 10px;
+  }
+  label,.error-message{
+    font-size: 12px;
+  }
 }

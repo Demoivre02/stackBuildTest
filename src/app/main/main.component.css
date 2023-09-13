@@ -34,6 +34,8 @@ h3{
   letter-spacing: 2px;
   font-size: 24px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -67,6 +69,27 @@ input{
   background: #fff;
   text-indent: 10px;
   border-radius: 3px;
+}
+
+@media (max-width:1000px){
+  .tablehead{
+    display: none;
+  }
+  .container{
+    width: 90%;
+    margin-left: 0;
+    margin-inline: auto;
+  }
+}
+@media (max-width:640px){
+  h3{
+    font-size: 18px;
+  }
+  input{
+    height: 30px;
+    margin-top: 3em;
+  }
+
 }
 
 

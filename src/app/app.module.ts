@@ -17,7 +17,6 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { LoaderComponent } from './loader/loader.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ToastComponent } from './toast/toast.component';
-import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { SearchComponent } from './search/search.component';
     LoaderComponent,
     SpinnerComponent,
     ToastComponent,
-    SearchComponent,
   ],
   imports: [
     BrowserModule,
